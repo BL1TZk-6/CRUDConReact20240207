@@ -3,7 +3,7 @@ import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 
 const useUserData = () => {
-    const API_BASE = "http://localhost:3000/api";
+    const API_BASE = "http://localhost:4000/api";
     const API_REGISTER = `${API_BASE}/register`;
     const API_USERS = `${API_BASE}/users`;
     const TOKEN_KEY = "accessToken";

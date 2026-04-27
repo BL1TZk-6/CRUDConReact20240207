@@ -12,8 +12,8 @@ import { isStrongPassword } from "@/lib/password-policy";
 
 function PasswordRecoveryOtp() {
   const navigate = useNavigate();
-  const API_RECOVERY = "http://localhost:3000/api/password-recovery"; // endpoint para reenvío de código OTP
-  const API_RECOVERY_VERIFY = "http://localhost:3000/api/password-recovery/verify"; // endpoint para validar OTP y actualizar contraseña
+  const API_RECOVERY = "http://localhost:4000/api/password-recovery"; // endpoint para reenvío de código OTP
+  const API_RECOVERY_VERIFY = "http://localhost:4000/api/password-recovery/verify"; // endpoint para validar OTP y actualizar contraseña
 
   const [otpCode, setOtpCode] = useState(""); // código OTP ingresado por el usuario
   const [newPassword, setNewPassword] = useState(""); // nueva contraseña a establecer

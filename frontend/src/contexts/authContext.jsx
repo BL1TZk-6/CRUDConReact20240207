@@ -5,7 +5,7 @@ import { toast } from "sonner";
 const AuthContext = createContext(null);
 export { AuthContext };
 
-const API_URL = "http://localhost:3000/api";
+const API_URL = "http://localhost:4000/api";
 const STORAGE_KEY = "accessToken";
 const REMEMBER_KEY = "rememberDevice";
 

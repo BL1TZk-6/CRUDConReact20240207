@@ -12,7 +12,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 
 function Register() {
     const navigate = useNavigate();
-    const API_REGISTER = "http://localhost:3000/api/register";
+    const API_REGISTER = "http://localhost:4000/api/register";
 
     const [birthDate, setBirthDate] = useState();
     const [name, setName] = useState("");
