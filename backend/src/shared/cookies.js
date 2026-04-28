@@ -15,6 +15,7 @@ const BASE_OPTIONS = {
 
 const MS = {
   FIVE_MIN: 5 * 60 * 1000,
+  ONE_HOUR: 60 * 60 * 1000,
 };
 
 //Cookies de autenticación (acceso + renovación)
@@ -27,11 +28,11 @@ const MS = {
 export const setAuthCookies = (res, accessToken, refreshToken) => {
   res.cookie(COOKIE_NAMES.ACCESS, accessToken, {
     ...BASE_OPTIONS,
-    maxAge: MS.FIVE_MIN,
+    maxAge: MS.ONE_HOUR,
   });
   res.cookie(COOKIE_NAMES.REFRESH, refreshToken, {
     ...BASE_OPTIONS,
-    maxAge: MS.FIVE_MIN,
+    maxAge: MS.ONE_HOUR,
   });
 };
 
